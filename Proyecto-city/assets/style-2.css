@@ -1,0 +1,191 @@
+:root{
+    --primary: #274156;
+    --secondary: #1C6E8C;
+    --terciary: #605856;
+    --text: #FBFCFF;
+    --other: #D0CCD0;
+    --selection: rgb(230, 48, 48);
+    --button: rgb(30, 27, 27);
+}
+
+/*Section Jugadores */
+
+.estrellas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 3% 0;
+}
+
+.estrellas p{
+    font-size:xx-large;
+    text-shadow: red 0 -2px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.jugadores{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    margin-top: 3vh;
+}
+
+.jugadores_container{
+    width: 90%;
+    height: 35vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jugador{
+    width: 30%;
+    box-shadow: 1px 2px 13px 4px rgba(0,0,0,0.49);
+    -webkit-box-shadow: 1px 2px 13px 4px rgba(0,0,0,0.49);
+    -moz-box-shadow: 1px 2px 13px 4px rgba(0,0,0,0.49);
+}
+
+.jugador img{
+    width: 100%;
+    height: 100%;
+}
+
+.jugador-datos{
+    z-index: 1;
+    position: relative;
+    background-color: var(--other);
+    text-align: center;
+    border: var(--terciary) solid 5px;
+    border-top: none;
+    display: none;
+}
+
+.jugador img:hover + .jugador-datos{
+    display: block;
+}
+
+.jugador-datos ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 1vh 0;
+}
+
+.jugador-datos li{
+    font-size: large;
+}
+
+/*SECTION ESTADIO*/
+.section_estadio{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.estadio{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    border: var(--primary) solid 5px;
+    box-shadow: 1px 2px 13px 4px rgba(0,0,0,0.49);
+    -webkit-box-shadow: 1px 2px 13px 4px rgba(0,0,0,0.49);
+    -moz-box-shadow: 1px 2px 13px 4px rgba(0,0,0,0.49);
+}
+
+.estadio_container{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--other);
+}
+
+.estadio-logo{
+    width: 10%;
+    padding: 1% 0;
+}
+
+.estadio-titulo{
+    font-size: xx-large;
+}
+
+.estadio-descripcion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3%;
+    border: black solid 5px;
+}
+
+.estadio-img{
+    border: black solid 5px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.estadio-img img{
+    width: 75%;
+}
+
+.estadio-iframe{
+    width: 100%;
+    display: flex;
+}
+
+.estadio-div{
+    width: 50%;
+    height: 40vh;
+}
+
+.estadio iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    height: 15rem;
+    margin-top: 5%;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+}
+
+.footer_conteiner{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_conteiner img{
+    width: 10%;
+}
+
+.footer_conteiner ul{
+    display: flex;
+    width: 50%;
+    text-align: center;
+}
+
+.footer_conteiner li{
+    display: contents;
+}
+
+.footer_conteiner li a img{
+    width: 20%;
+}
+
+.footer_conteiner p a{
+    color: black;
+    font-size: larger;
+}
